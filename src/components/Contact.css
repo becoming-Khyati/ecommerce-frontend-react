@@ -1,0 +1,123 @@
+/* ---------------- General Container ---------------- */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* ---------------- Page Heading ---------------- */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #222222;
+  letter-spacing: 0.5px;
+}
+
+/* ---------------- Google Maps iframe ---------------- */
+iframe {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+iframe:hover {
+  transform: scale(1.01);
+}
+
+/* ---------------- Contact Form ---------------- */
+.contact-form {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-form:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ---------------- Form Inputs & Textarea ---------------- */
+.contact-inputs input,
+.contact-inputs textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.contact-inputs input:focus,
+.contact-inputs textarea:focus {
+  outline: none;
+  border-color: #60a5fa; /* subtle blue */
+  box-shadow: 0 0 0 2px rgba(96,165,250,0.2);
+}
+
+/* Textarea Styling */
+.contact-inputs textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* ---------------- Submit Button ---------------- */
+.contact-inputs input[type="submit"] {
+  background-color: #60a5fa;
+  color: #ffffff;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0.65rem 1.5rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-inputs input[type="submit"]:hover {
+  background-color: #3b82f6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .contact-inputs input,
+  .contact-inputs textarea {
+    padding: 0.65rem 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  .contact-inputs input[type="submit"] {
+    width: 100%;
+    padding: 0.65rem;
+  }
+
+  iframe {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  iframe {
+    height: 200px;
+  }
+}

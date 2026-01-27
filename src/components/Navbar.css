@@ -1,0 +1,113 @@
+/* ------------------- General Reset ------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ------------------- Navbar Container ------------------- */
+nav {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+/* ------------------- Logo ------------------- */
+nav a.text-2xl {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111111;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a.text-2xl:hover {
+  color: #1d4ed8; /* subtle hover color */
+}
+
+/* ------------------- Navigation Links ------------------- */
+nav .flex.gap-6 {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* spacing between links */
+}
+
+nav .flex.gap-6 a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav .flex.gap-6 a:hover {
+  color: #1d4ed8;
+}
+
+/* ------------------- Search Bar ------------------- */
+nav form input[type="text"] {
+  border: 1px solid #d1d5db;
+  border-radius: 9999px; /* fully rounded */
+  padding: 0.35rem 1rem;
+  width: 14rem;
+  transition: all 0.3s ease;
+}
+
+nav form input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.3); /* subtle blue ring */
+  border-color: #3b82f6;
+}
+
+/* ------------------- Account / Login buttons ------------------- */
+nav div.ml-4 a {
+  padding: 0.45rem 1rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav div.ml-4 a:hover {
+  opacity: 0.85;
+}
+
+/* Button colors */
+nav div.ml-4 a[href*="/login"] {
+  background-color: #3b82f6; /* blue */
+  color: #ffffff;
+}
+
+nav div.ml-4 a[href*="/login"]:hover {
+  background-color: #2563eb;
+}
+
+nav div.ml-4 a[href*="/account"] {
+  background-color: #111111; /* black */
+  color: #ffffff;
+}
+
+/* ------------------- Responsive ------------------- */
+@media (max-width: 1024px) {
+  nav form input[type="text"] {
+    width: 12rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav .flex.gap-6 {
+    display: none; /* hide nav links on small screens */
+  }
+
+  nav form input[type="text"] {
+    width: 10rem;
+  }
+}
