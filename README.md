@@ -1,6 +1,6 @@
 # E-Commerce Frontend (React)
 
-A responsive e-commerce frontend built using React.js, focused on clean UI, performance, and reusable components.
+A responsive e-commerce frontend built using React.js, focused on clean UI, performance, and reusable components. Backend API consumed from a Django REST backend.
 
 ## Features
 - Product listing with filters and sorting
